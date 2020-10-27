@@ -18,6 +18,11 @@ public class AutomatizacionPaginaWeb {
 	driver.get(url);
 	WebElement cajaTeextoNombre = driver.findElement(By.id("identifierId"));
 	cajaTeextoNombre.sendKeys("ing.cristhianher@gmail.com");
+	WebElement boton = driver.findElement(By.xpath("//*[@id=\"identifierNext\"]/div/button/span"));
+	boton.click();
+	
+	
+	
 	driver.close();
 	try {
 		Thread.sleep(5000);
