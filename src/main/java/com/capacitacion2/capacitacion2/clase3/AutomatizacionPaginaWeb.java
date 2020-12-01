@@ -1,4 +1,4 @@
-package com.capacitacion2.case3;
+package com.capacitacion2.capacitacion2.clase3;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

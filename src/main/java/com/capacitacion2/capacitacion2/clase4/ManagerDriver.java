@@ -1,4 +1,4 @@
-package com.cpacitacion2.clase4;
+package com.capacitacion2.capacitacion2.clase4;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
