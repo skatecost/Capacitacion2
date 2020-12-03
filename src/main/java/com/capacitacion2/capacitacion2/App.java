@@ -4,14 +4,21 @@ import com.capacitacion2.capacitacion2.clase3.AutomatizacionPaginaWeb;
 import com.capacitacion2.capacitacion2.clase4.ManagerDriver;
 import com.capacitacion2.capacitacion2.clase4.PageObjectTourFrancia;
 import com.capacitacion2.capacitacion2.clase5.AnalizarTexto;
-
+import com.capacitacion2.capacitacion2.Clase7.Claase;
+import com.capacitacion2.capacitacion2.Clase7.Motocicleta;
 /**
  * Hello world!
  *
  */
-public class App {
+public class App  {
 	public static void main(String[] args) {
-		
+		//Claase objClase =  new Claase();
+		//objClase.metodo();
+		//Motocicleta moto = new Motocicleta("yamaha","rojo","153","15");
+		//System.out.println("El cilindraje de la nmotro es "+ moto.getCilindraje() );
+		//System.out.println("se reportencia la motocicleta " );
+		//moto.setCilindraje("190");;
+		//System.out.println("El cilindraje de la moto es "+ moto.getCilindraje() );
 	}
 	
 	public  void tareaUno () {

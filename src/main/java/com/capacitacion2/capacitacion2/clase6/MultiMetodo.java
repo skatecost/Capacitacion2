@@ -14,16 +14,27 @@ public class MultiMetodo {
 		}
 		return arreglo;
 	} 
+	
 	public boolean getOpositive(boolean valor) {
 		return !valor;
 	}
+	
 	
 	public int  dividir (int divisor , int  dividendo) {
 		int resultado  = dividendo / divisor ;
 		return  resultado;
 	}
+	
 	public String metodoNulo() {
 		return "afsdfaf";		
 	}
 	
+	public void timeout() {
+		try {
+			Thread.sleep(3000);
+		}catch(InterruptedException e) {
+			e.printStackTrace();
+		}
+		
+	}
 }
