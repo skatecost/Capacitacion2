@@ -1,5 +1,5 @@
 package com.capacitacion2.capacitacion2;
-
+/*
 import static org.junit.Assert.*;
 
 import java.util.ArrayList;
@@ -16,7 +16,7 @@ import com.capacitacion2.capacitacion2.clase6.MultiMetodo;
 /*
  * Junit 4
  */
-@RunWith (value = Parameterized.class)
+/* @RunWith (value = Parameterized.class)
 public class MultiMetodoTest {
 	private MultiMetodo objMetodo;
 	private int esperado;
@@ -27,7 +27,7 @@ public class MultiMetodoTest {
 	 */
 	
 	
-	public MultiMetodoTest(int esperado, int variableA, int variableB){
+/*	public MultiMetodoTest(int esperado, int variableA, int variableB){
 		this.esperado = esperado;
 		this.variableA = variableA;
 		this.variableB = variableB;
@@ -38,7 +38,7 @@ public class MultiMetodoTest {
 	 * objeto con el fin  de iterar varias veces una prueba
 	 */
 	
-	@Parameters
+/*  @Parameters
 	public static Iterable datosEntrada() {
 		List<Object[]> listaValores = new ArrayList<>();
 		listaValores.add(new Object[] {2,10,5}); //10/5=2
@@ -108,3 +108,4 @@ public class MultiMetodoTest {
         assertEquals(esperado,respuesta);
     }  
 }
+*/

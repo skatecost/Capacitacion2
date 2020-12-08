@@ -1,6 +1,6 @@
 package com.capacitacion2.capacitacion2;
 
-import static org.junit.Assert.*;
+/*import static org.junit.Assert.*;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -40,3 +40,4 @@ public class AnalizrTextoTest {
 	}
 
 }
+*/
