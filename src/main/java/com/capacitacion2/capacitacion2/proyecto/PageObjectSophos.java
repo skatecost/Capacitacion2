@@ -31,7 +31,7 @@ public class PageObjectSophos extends PageFactory {
 		
 		System.out.println("\n \n \n  LOS PERFILES QUE SE BUSCAN PARA TRABAJAR CON SOPHOS SON \n \n");
 		for (WebElement posicion: listaPerfiles) {
-			System.out.println(" Los perfiles disponibles para el desarrollo : "+posicion.getText());
+			System.out.println(" Los perfiles disponibles para el SOPHOS : "+posicion.getText());
 		}		     
 							
 	}
