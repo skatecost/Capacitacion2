@@ -6,7 +6,9 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(monochrome = true,plugin = "pretty",features = "src/test/resources/Features", glue = "com.capacitacion2.capacitacion2.clase8.stepdefinitions")
+@CucumberOptions(tags = "@Clase10 ",monochrome = true,
+plugin = "pretty",features = "src/test/resources/Features",
+glue = "com.capacitacion2.capacitacion2.clase8.stepdefinitions")
 public class Runner {
 
 }

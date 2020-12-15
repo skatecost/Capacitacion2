@@ -1,9 +1,14 @@
 package com.capacitacion2.capacitacion2.clase8.stepdefinitions;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+
+import com.capacitacion2.capacitacion2.clase10.Palabras;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import javax.swing.JOptionPane;
 
 import org.junit.After;
 import org.junit.Before;
@@ -17,7 +22,7 @@ import cucumber.api.java.en.When;
 public class Steps {
 	private List<Integer> listaNumeros;
 	private int ultimoResultado;
-	
+	private Palabras objPalabras;
 	@Before
 	public void antesDe() {
 		ultimoResultado = 0;	
@@ -29,6 +34,19 @@ public class Steps {
 		listaNumeros.clear();
 		ultimoResultado = 0 ; 	
 		System.out.println("Se reinician los valores");
+	} 
+	
+	@Given("^el usuario escribe la oracion")
+	public void tomaroracion() throws Throwable {
+		String oracion = JOptionPane.showInputDialog("ingrese la oracion"); 
+		objPalabras  = new Palabras(oracion);
+	    
+	}
+	
+	@Given("^el usuario envia oracion \"([^\"]*)\"$")
+	public void envioOracion(String oracion) throws Throwable {
+		objPalabras  = new Palabras(oracion);
+	    System.out.println("Se ingresa elemento a la lista" + oracion);
 	}
 	
 	@Given("^dada unalista de numeros$")
@@ -72,7 +90,23 @@ public class Steps {
 	
 	@And("^el usuario envia la palabra \"([^\"]*)\"$")
 	public void el_usuario_envia_la_palabra(String arg1) throws Throwable {
-		System.out.println("La oracion recibida es " + arg1);
+		System .out.println("La oracion recibida es " + arg1);
 	}
-
+	
+	@Then("^el usuario valida la longitud (\\d+)$")
+	public void validaLongitud(int numero) throws Throwable {
+		System.out.println("longitud de entrada" + numero);
+		assertEquals(numero,objPalabras.longitudPalabra());
+	}
+	
+	@When("^El usuario concatena la  oracion \"([^\"]*)\"$")
+	public void concatenar(String complemento ) throws Throwable {
+		System.out.println("el usuario concatena la oracion");
+		assertTrue(!objPalabras.concatenar(complemento).isEmpty());
+	}
+	
+	@When("^El usuario valida la oracion esperada  \"([^\"]*)\"$")
+	public void validarOracion(String oracionValidar ) throws Throwable {
+		assertEquals(oracionValidar,objPalabras.getPalabra());
+	}
 }
